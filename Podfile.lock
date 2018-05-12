@@ -1,0 +1,32 @@
+PODS:
+  - PeerTalk (0.0.2)
+  - XPCKit (0.0.1)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - PeerTalk (from `https://github.com/rsms/peertalk`)
+  - XPCKit
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - XPCKit
+    - YYModel
+
+EXTERNAL SOURCES:
+  PeerTalk:
+    :git: https://github.com/rsms/peertalk
+
+CHECKOUT OPTIONS:
+  PeerTalk:
+    :commit: 588303b43efa5082d654b6f75d1b84a6ba4b5b9e
+    :git: https://github.com/rsms/peertalk
+
+SPEC CHECKSUMS:
+  PeerTalk: f5389c286e4d477e59b73dfbf25c5c70a2464761
+  XPCKit: 12fd4b8023e1963169f52671473175838ef96114
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 1307d65a60e65ef9e907f6d32b40a67eb9f5e00a
+
+COCOAPODS: 1.5.0

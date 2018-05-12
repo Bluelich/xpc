@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C269689E1226918372AE8B4 /* Pods_XPCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE8057820F7302D42A61798 /* Pods_XPCDemo.framework */; };
+		77945608A6789BEBFFEE5925 /* Pods_xpc_connection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B633FF9924A876E372194FCD /* Pods_xpc_connection.framework */; };
+		91D67FB9B711A6EFAFEBA440 /* Pods_xpc_connection_service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFB417482688EFF62C20A09 /* Pods_xpc_connection_service.framework */; };
+		B4557CF920A3E91D006C6A75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4557CF820A3E91D006C6A75 /* AppDelegate.m */; };
+		B4557CFC20A3E91D006C6A75 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4557CFB20A3E91D006C6A75 /* ViewController.m */; };
+		B4557CFE20A3E91E006C6A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4557CFD20A3E91E006C6A75 /* Assets.xcassets */; };
+		B4557D0120A3E91E006C6A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4557CFF20A3E91E006C6A75 /* Main.storyboard */; };
+		B4557D0420A3E91E006C6A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4557D0320A3E91E006C6A75 /* main.m */; };
+		B4557D1420A3E937006C6A75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4557D1320A3E937006C6A75 /* main.m */; };
+		B4557D1820A3E937006C6A75 /* xpc_connection_service.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B4557D0D20A3E937006C6A75 /* xpc_connection_service.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B47263DB20A050200063595F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B47263DA20A050200063595F /* AppDelegate.m */; };
+		B47263DE20A050200063595F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B47263DD20A050200063595F /* ViewController.m */; };
+		B47263E020A050200063595F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47263DF20A050200063595F /* Assets.xcassets */; };
+		B47263E320A050200063595F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47263E120A050200063595F /* Main.storyboard */; };
+		B47263E620A050210063595F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B47263E520A050210063595F /* main.m */; };
+		B47263F620A0506B0063595F /* ExternalCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B47263F520A0506B0063595F /* ExternalCamera.m */; };
+		B47263F820A0506B0063595F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B47263F720A0506B0063595F /* main.m */; };
+		B47263FC20A0506B0063595F /* ExternalCamera.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = B47263F120A0506B0063595F /* ExternalCamera.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B472640320A052980063595F /* WeatherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640220A052980063595F /* WeatherAPI.m */; };
+		B472640420A052980063595F /* WeatherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640220A052980063595F /* WeatherAPI.m */; };
+		B472641420A0529F0063595F /* WeatherMain.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640720A0529F0063595F /* WeatherMain.m */; };
+		B472641520A0529F0063595F /* WeatherMain.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640720A0529F0063595F /* WeatherMain.m */; };
+		B472641620A0529F0063595F /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640920A0529F0063595F /* Weather.m */; };
+		B472641720A0529F0063595F /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640920A0529F0063595F /* Weather.m */; };
+		B472641820A0529F0063595F /* WeatherWind.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640D20A0529F0063595F /* WeatherWind.m */; };
+		B472641920A0529F0063595F /* WeatherWind.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640D20A0529F0063595F /* WeatherWind.m */; };
+		B472641A20A0529F0063595F /* WeatherRootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640F20A0529F0063595F /* WeatherRootClass.m */; };
+		B472641B20A0529F0063595F /* WeatherRootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B472640F20A0529F0063595F /* WeatherRootClass.m */; };
+		B472641C20A0529F0063595F /* WeatherSy.m in Sources */ = {isa = PBXBuildFile; fileRef = B472641120A0529F0063595F /* WeatherSy.m */; };
+		B472641D20A0529F0063595F /* WeatherSy.m in Sources */ = {isa = PBXBuildFile; fileRef = B472641120A0529F0063595F /* WeatherSy.m */; };
+		B472641E20A0529F0063595F /* WeatherCoord.m in Sources */ = {isa = PBXBuildFile; fileRef = B472641220A0529F0063595F /* WeatherCoord.m */; };
+		B472641F20A0529F0063595F /* WeatherCoord.m in Sources */ = {isa = PBXBuildFile; fileRef = B472641220A0529F0063595F /* WeatherCoord.m */; };
+		B472642020A0529F0063595F /* WeatherCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = B472641320A0529F0063595F /* WeatherCloud.m */; };
+		B472642120A0529F0063595F /* WeatherCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = B472641320A0529F0063595F /* WeatherCloud.m */; };
+		B472642D20A06B310063595F /* ExternalCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B47263F520A0506B0063595F /* ExternalCamera.m */; };
+		F4CDE81586F1756502A33DE3 /* Pods_ExternalCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506484EDB9A42BD08C19D356 /* Pods_ExternalCamera.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4557D1620A3E937006C6A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B47263CE20A050200063595F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4557D0C20A3E937006C6A75;
+			remoteInfo = xpc_connection_service;
+		};
+		B47263FA20A0506B0063595F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B47263CE20A050200063595F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B47263F020A0506B0063595F;
+			remoteInfo = ExternalCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4557D1C20A3E937006C6A75 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				B4557D1820A3E937006C6A75 /* xpc_connection_service.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B472640020A0506B0063595F /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				B47263FC20A0506B0063595F /* ExternalCamera.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07D17EDB4B25A075B877C3EC /* Pods-xpc_connection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xpc_connection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xpc_connection/Pods-xpc_connection.debug.xcconfig"; sourceTree = "<group>"; };
+		1BFB417482688EFF62C20A09 /* Pods_xpc_connection_service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xpc_connection_service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CDAE86A1777A2F7B5FA3CD4 /* Pods-xpc_connection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xpc_connection.release.xcconfig"; path = "Pods/Target Support Files/Pods-xpc_connection/Pods-xpc_connection.release.xcconfig"; sourceTree = "<group>"; };
+		29BDEF4778E999CFD3ABB5EF /* Pods-ExternalCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExternalCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExternalCamera/Pods-ExternalCamera.release.xcconfig"; sourceTree = "<group>"; };
+		2FE8057820F7302D42A61798 /* Pods_XPCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		347DE010E7A75468C88955F3 /* Pods-ExternalCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExternalCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExternalCamera/Pods-ExternalCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		506484EDB9A42BD08C19D356 /* Pods_ExternalCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExternalCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82A8502F1C887B0FF9D164B5 /* Pods-XPCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPCDemo/Pods-XPCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B4557C9D20A2EA3B006C6A75 /* AppProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppProtocol.h; sourceTree = "<group>"; };
+		B4557CF520A3E91D006C6A75 /* xpc_connection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xpc_connection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4557CF720A3E91D006C6A75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B4557CF820A3E91D006C6A75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B4557CFA20A3E91D006C6A75 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B4557CFB20A3E91D006C6A75 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B4557CFD20A3E91E006C6A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4557D0020A3E91E006C6A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4557D0220A3E91E006C6A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4557D0320A3E91E006C6A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4557D0520A3E91E006C6A75 /* xpc_connection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xpc_connection.entitlements; sourceTree = "<group>"; };
+		B4557D0D20A3E937006C6A75 /* xpc_connection_service.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = xpc_connection_service.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4557D1320A3E937006C6A75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4557D1520A3E937006C6A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B47263D620A050200063595F /* XPCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47263D920A050200063595F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B47263DA20A050200063595F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B47263DC20A050200063595F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B47263DD20A050200063595F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B47263DF20A050200063595F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B47263E220A050200063595F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B47263E420A050200063595F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B47263E520A050210063595F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B47263E720A050210063595F /* XPCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPCDemo.entitlements; sourceTree = "<group>"; };
+		B47263F120A0506B0063595F /* ExternalCamera.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = ExternalCamera.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47263F320A0506B0063595F /* ExternalCameraProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalCameraProtocol.h; sourceTree = "<group>"; };
+		B47263F420A0506B0063595F /* ExternalCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalCamera.h; sourceTree = "<group>"; };
+		B47263F520A0506B0063595F /* ExternalCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExternalCamera.m; sourceTree = "<group>"; };
+		B47263F720A0506B0063595F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B47263F920A0506B0063595F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B472640120A052980063595F /* WeatherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherAPI.h; sourceTree = "<group>"; };
+		B472640220A052980063595F /* WeatherAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherAPI.m; sourceTree = "<group>"; };
+		B472640620A0529F0063595F /* WeatherWind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherWind.h; sourceTree = "<group>"; };
+		B472640720A0529F0063595F /* WeatherMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherMain.m; sourceTree = "<group>"; };
+		B472640820A0529F0063595F /* WeatherRootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherRootClass.h; sourceTree = "<group>"; };
+		B472640920A0529F0063595F /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+		B472640A20A0529F0063595F /* WeatherCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCloud.h; sourceTree = "<group>"; };
+		B472640B20A0529F0063595F /* WeatherCoord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherCoord.h; sourceTree = "<group>"; };
+		B472640C20A0529F0063595F /* WeatherSy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherSy.h; sourceTree = "<group>"; };
+		B472640D20A0529F0063595F /* WeatherWind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherWind.m; sourceTree = "<group>"; };
+		B472640E20A0529F0063595F /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		B472640F20A0529F0063595F /* WeatherRootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherRootClass.m; sourceTree = "<group>"; };
+		B472641020A0529F0063595F /* WeatherMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherMain.h; sourceTree = "<group>"; };
+		B472641120A0529F0063595F /* WeatherSy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherSy.m; sourceTree = "<group>"; };
+		B472641220A0529F0063595F /* WeatherCoord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCoord.m; sourceTree = "<group>"; };
+		B472641320A0529F0063595F /* WeatherCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherCloud.m; sourceTree = "<group>"; };
+		B472642C20A058FF0063595F /* ExternalCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExternalCamera.entitlements; sourceTree = "<group>"; };
+		B633FF9924A876E372194FCD /* Pods_xpc_connection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xpc_connection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC564C6522E65D95364161B0 /* Pods-xpc_connection_service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xpc_connection_service.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xpc_connection_service/Pods-xpc_connection_service.debug.xcconfig"; sourceTree = "<group>"; };
+		D276BFBAB6ACF9ED64FD6E82 /* Pods-xpc_connection_service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xpc_connection_service.release.xcconfig"; path = "Pods/Target Support Files/Pods-xpc_connection_service/Pods-xpc_connection_service.release.xcconfig"; sourceTree = "<group>"; };
+		F0911B1B8CA5ED4FC8E66AB4 /* Pods-XPCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPCDemo/Pods-XPCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4557CF220A3E91D006C6A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77945608A6789BEBFFEE5925 /* Pods_xpc_connection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4557D0A20A3E937006C6A75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D67FB9B711A6EFAFEBA440 /* Pods_xpc_connection_service.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47263D320A050200063595F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C269689E1226918372AE8B4 /* Pods_XPCDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47263EE20A0506B0063595F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CDE81586F1756502A33DE3 /* Pods_ExternalCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18DAD137A2A8C5CDAB97FED0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				347DE010E7A75468C88955F3 /* Pods-ExternalCamera.debug.xcconfig */,
+				29BDEF4778E999CFD3ABB5EF /* Pods-ExternalCamera.release.xcconfig */,
+				F0911B1B8CA5ED4FC8E66AB4 /* Pods-XPCDemo.debug.xcconfig */,
+				82A8502F1C887B0FF9D164B5 /* Pods-XPCDemo.release.xcconfig */,
+				07D17EDB4B25A075B877C3EC /* Pods-xpc_connection.debug.xcconfig */,
+				1CDAE86A1777A2F7B5FA3CD4 /* Pods-xpc_connection.release.xcconfig */,
+				BC564C6522E65D95364161B0 /* Pods-xpc_connection_service.debug.xcconfig */,
+				D276BFBAB6ACF9ED64FD6E82 /* Pods-xpc_connection_service.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4557CF620A3E91D006C6A75 /* xpc_connection */ = {
+			isa = PBXGroup;
+			children = (
+				B4557CF720A3E91D006C6A75 /* AppDelegate.h */,
+				B4557CF820A3E91D006C6A75 /* AppDelegate.m */,
+				B4557CFA20A3E91D006C6A75 /* ViewController.h */,
+				B4557CFB20A3E91D006C6A75 /* ViewController.m */,
+				B4557CFD20A3E91E006C6A75 /* Assets.xcassets */,
+				B4557CFF20A3E91E006C6A75 /* Main.storyboard */,
+				B4557D0220A3E91E006C6A75 /* Info.plist */,
+				B4557D0320A3E91E006C6A75 /* main.m */,
+				B4557D0520A3E91E006C6A75 /* xpc_connection.entitlements */,
+			);
+			path = xpc_connection;
+			sourceTree = "<group>";
+		};
+		B4557D0E20A3E937006C6A75 /* xpc_connection_service */ = {
+			isa = PBXGroup;
+			children = (
+				B4557D1320A3E937006C6A75 /* main.m */,
+				B4557D1520A3E937006C6A75 /* Info.plist */,
+			);
+			path = xpc_connection_service;
+			sourceTree = "<group>";
+		};
+		B47263CD20A050200063595F = {
+			isa = PBXGroup;
+			children = (
+				B47263D820A050200063595F /* XPCDemo */,
+				B47263F220A0506B0063595F /* ExternalCamera */,
+				B4557CF620A3E91D006C6A75 /* xpc_connection */,
+				B4557D0E20A3E937006C6A75 /* xpc_connection_service */,
+				B47263D720A050200063595F /* Products */,
+				18DAD137A2A8C5CDAB97FED0 /* Pods */,
+				B9F747AF9103AE9627F2B984 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B47263D720A050200063595F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B47263D620A050200063595F /* XPCDemo.app */,
+				B47263F120A0506B0063595F /* ExternalCamera.xpc */,
+				B4557CF520A3E91D006C6A75 /* xpc_connection.app */,
+				B4557D0D20A3E937006C6A75 /* xpc_connection_service.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B47263D820A050200063595F /* XPCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B47263D920A050200063595F /* AppDelegate.h */,
+				B47263DA20A050200063595F /* AppDelegate.m */,
+				B47263DC20A050200063595F /* ViewController.h */,
+				B47263DD20A050200063595F /* ViewController.m */,
+				B4557C9D20A2EA3B006C6A75 /* AppProtocol.h */,
+				B47263DF20A050200063595F /* Assets.xcassets */,
+				B47263E120A050200063595F /* Main.storyboard */,
+				B47263E420A050200063595F /* Info.plist */,
+				B47263E520A050210063595F /* main.m */,
+				B47263E720A050210063595F /* XPCDemo.entitlements */,
+			);
+			path = XPCDemo;
+			sourceTree = "<group>";
+		};
+		B47263F220A0506B0063595F /* ExternalCamera */ = {
+			isa = PBXGroup;
+			children = (
+				B472642C20A058FF0063595F /* ExternalCamera.entitlements */,
+				B472640520A0529F0063595F /* Model */,
+				B47263F320A0506B0063595F /* ExternalCameraProtocol.h */,
+				B47263F420A0506B0063595F /* ExternalCamera.h */,
+				B47263F520A0506B0063595F /* ExternalCamera.m */,
+				B472640120A052980063595F /* WeatherAPI.h */,
+				B472640220A052980063595F /* WeatherAPI.m */,
+				B47263F720A0506B0063595F /* main.m */,
+				B47263F920A0506B0063595F /* Info.plist */,
+			);
+			path = ExternalCamera;
+			sourceTree = "<group>";
+		};
+		B472640520A0529F0063595F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B472640E20A0529F0063595F /* Weather.h */,
+				B472640920A0529F0063595F /* Weather.m */,
+				B472640C20A0529F0063595F /* WeatherSy.h */,
+				B472641120A0529F0063595F /* WeatherSy.m */,
+				B472640620A0529F0063595F /* WeatherWind.h */,
+				B472640D20A0529F0063595F /* WeatherWind.m */,
+				B472641020A0529F0063595F /* WeatherMain.h */,
+				B472640720A0529F0063595F /* WeatherMain.m */,
+				B472640A20A0529F0063595F /* WeatherCloud.h */,
+				B472641320A0529F0063595F /* WeatherCloud.m */,
+				B472640B20A0529F0063595F /* WeatherCoord.h */,
+				B472641220A0529F0063595F /* WeatherCoord.m */,
+				B472640820A0529F0063595F /* WeatherRootClass.h */,
+				B472640F20A0529F0063595F /* WeatherRootClass.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9F747AF9103AE9627F2B984 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				506484EDB9A42BD08C19D356 /* Pods_ExternalCamera.framework */,
+				2FE8057820F7302D42A61798 /* Pods_XPCDemo.framework */,
+				B633FF9924A876E372194FCD /* Pods_xpc_connection.framework */,
+				1BFB417482688EFF62C20A09 /* Pods_xpc_connection_service.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4557CF420A3E91D006C6A75 /* xpc_connection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4557D0620A3E91E006C6A75 /* Build configuration list for PBXNativeTarget "xpc_connection" */;
+			buildPhases = (
+				DD4AFD727B552E319924B9EF /* [CP] Check Pods Manifest.lock */,
+				B4557CF120A3E91D006C6A75 /* Sources */,
+				B4557CF220A3E91D006C6A75 /* Frameworks */,
+				B4557CF320A3E91D006C6A75 /* Resources */,
+				B4557D1C20A3E937006C6A75 /* Embed XPC Services */,
+				C9A135B678EB8B860C172FDA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4557D1720A3E937006C6A75 /* PBXTargetDependency */,
+			);
+			name = xpc_connection;
+			productName = xpc_connection;
+			productReference = B4557CF520A3E91D006C6A75 /* xpc_connection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4557D0C20A3E937006C6A75 /* xpc_connection_service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4557D1920A3E937006C6A75 /* Build configuration list for PBXNativeTarget "xpc_connection_service" */;
+			buildPhases = (
+				5CD5FF7661C4FF1AC08F9D45 /* [CP] Check Pods Manifest.lock */,
+				B4557D0920A3E937006C6A75 /* Sources */,
+				B4557D0A20A3E937006C6A75 /* Frameworks */,
+				B4557D0B20A3E937006C6A75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xpc_connection_service;
+			productName = xpc_connection_service;
+			productReference = B4557D0D20A3E937006C6A75 /* xpc_connection_service.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+		B47263D520A050200063595F /* XPCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B47263EA20A050210063595F /* Build configuration list for PBXNativeTarget "XPCDemo" */;
+			buildPhases = (
+				DCFCDD101BC68F65AA9F6D11 /* [CP] Check Pods Manifest.lock */,
+				B47263D220A050200063595F /* Sources */,
+				B47263D320A050200063595F /* Frameworks */,
+				B47263D420A050200063595F /* Resources */,
+				B472640020A0506B0063595F /* Embed XPC Services */,
+				04774B526331F8BEA908CCCF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B47263FB20A0506B0063595F /* PBXTargetDependency */,
+			);
+			name = XPCDemo;
+			productName = XPCDemo;
+			productReference = B47263D620A050200063595F /* XPCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B47263F020A0506B0063595F /* ExternalCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B47263FD20A0506B0063595F /* Build configuration list for PBXNativeTarget "ExternalCamera" */;
+			buildPhases = (
+				C9A60BBC1E9A0046634ADCDE /* [CP] Check Pods Manifest.lock */,
+				B47263ED20A0506B0063595F /* Sources */,
+				B47263EE20A0506B0063595F /* Frameworks */,
+				B47263EF20A0506B0063595F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExternalCamera;
+			productName = ExternalCamera;
+			productReference = B47263F120A0506B0063595F /* ExternalCamera.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B47263CE20A050200063595F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Bluelich;
+				TargetAttributes = {
+					B4557CF420A3E91D006C6A75 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					B4557D0C20A3E937006C6A75 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					B47263D520A050200063595F = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					B47263F020A0506B0063595F = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B47263D120A050200063595F /* Build configuration list for PBXProject "XPCDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B47263CD20A050200063595F;
+			productRefGroup = B47263D720A050200063595F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B47263D520A050200063595F /* XPCDemo */,
+				B47263F020A0506B0063595F /* ExternalCamera */,
+				B4557CF420A3E91D006C6A75 /* xpc_connection */,
+				B4557D0C20A3E937006C6A75 /* xpc_connection_service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4557CF320A3E91D006C6A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4557CFE20A3E91E006C6A75 /* Assets.xcassets in Resources */,
+				B4557D0120A3E91E006C6A75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4557D0B20A3E937006C6A75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47263D420A050200063595F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B47263E020A050200063595F /* Assets.xcassets in Resources */,
+				B47263E320A050200063595F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47263EF20A0506B0063595F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04774B526331F8BEA908CCCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XPCDemo/Pods-XPCDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PeerTalk/PeerTalk.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PeerTalk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XPCDemo/Pods-XPCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CD5FF7661C4FF1AC08F9D45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xpc_connection_service-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A135B678EB8B860C172FDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-xpc_connection/Pods-xpc_connection-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/XPCKit/XPCKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XPCKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xpc_connection/Pods-xpc_connection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A60BBC1E9A0046634ADCDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExternalCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCFCDD101BC68F65AA9F6D11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XPCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD4AFD727B552E319924B9EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xpc_connection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4557CF120A3E91D006C6A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4557CFC20A3E91D006C6A75 /* ViewController.m in Sources */,
+				B4557D0420A3E91E006C6A75 /* main.m in Sources */,
+				B4557CF920A3E91D006C6A75 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4557D0920A3E937006C6A75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4557D1420A3E937006C6A75 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47263D220A050200063595F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B472641620A0529F0063595F /* Weather.m in Sources */,
+				B472642020A0529F0063595F /* WeatherCloud.m in Sources */,
+				B47263DE20A050200063595F /* ViewController.m in Sources */,
+				B472640320A052980063595F /* WeatherAPI.m in Sources */,
+				B472641420A0529F0063595F /* WeatherMain.m in Sources */,
+				B472641C20A0529F0063595F /* WeatherSy.m in Sources */,
+				B47263E620A050210063595F /* main.m in Sources */,
+				B472641E20A0529F0063595F /* WeatherCoord.m in Sources */,
+				B472642D20A06B310063595F /* ExternalCamera.m in Sources */,
+				B47263DB20A050200063595F /* AppDelegate.m in Sources */,
+				B472641820A0529F0063595F /* WeatherWind.m in Sources */,
+				B472641A20A0529F0063595F /* WeatherRootClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47263ED20A0506B0063595F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B47263F820A0506B0063595F /* main.m in Sources */,
+				B472641B20A0529F0063595F /* WeatherRootClass.m in Sources */,
+				B472641D20A0529F0063595F /* WeatherSy.m in Sources */,
+				B472641520A0529F0063595F /* WeatherMain.m in Sources */,
+				B472641F20A0529F0063595F /* WeatherCoord.m in Sources */,
+				B472640420A052980063595F /* WeatherAPI.m in Sources */,
+				B472642120A0529F0063595F /* WeatherCloud.m in Sources */,
+				B47263F620A0506B0063595F /* ExternalCamera.m in Sources */,
+				B472641920A0529F0063595F /* WeatherWind.m in Sources */,
+				B472641720A0529F0063595F /* Weather.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4557D1720A3E937006C6A75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4557D0C20A3E937006C6A75 /* xpc_connection_service */;
+			targetProxy = B4557D1620A3E937006C6A75 /* PBXContainerItemProxy */;
+		};
+		B47263FB20A0506B0063595F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B47263F020A0506B0063595F /* ExternalCamera */;
+			targetProxy = B47263FA20A0506B0063595F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4557CFF20A3E91E006C6A75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4557D0020A3E91E006C6A75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B47263E120A050200063595F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B47263E220A050200063595F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4557D0720A3E91E006C6A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D17EDB4B25A075B877C3EC /* Pods-xpc_connection.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xpc_connection/xpc_connection.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = xpc_connection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluelich.xpc-connection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		B4557D0820A3E91E006C6A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDAE86A1777A2F7B5FA3CD4 /* Pods-xpc_connection.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xpc_connection/xpc_connection.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = xpc_connection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluelich.xpc-connection";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		B4557D1A20A3E937006C6A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC564C6522E65D95364161B0 /* Pods-xpc_connection_service.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = xpc_connection_service/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluelich.xpc-connection-service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B4557D1B20A3E937006C6A75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D276BFBAB6ACF9ED64FD6E82 /* Pods-xpc_connection_service.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = xpc_connection_service/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bluelich.xpc-connection-service";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B47263E820A050210063595F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B47263E920A050210063595F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B47263EB20A050210063595F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0911B1B8CA5ED4FC8E66AB4 /* Pods-XPCDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XPCDemo/XPCDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = XPCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluelich.XPCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		B47263EC20A050210063595F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A8502F1C887B0FF9D164B5 /* Pods-XPCDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XPCDemo/XPCDemo.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = XPCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluelich.XPCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		B47263FE20A0506B0063595F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347DE010E7A75468C88955F3 /* Pods-ExternalCamera.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExternalCamera/ExternalCamera.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ExternalCamera/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluelich.ExternalCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B47263FF20A0506B0063595F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BDEF4778E999CFD3ABB5EF /* Pods-ExternalCamera.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExternalCamera/ExternalCamera.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ExternalCamera/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluelich.ExternalCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4557D0620A3E91E006C6A75 /* Build configuration list for PBXNativeTarget "xpc_connection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4557D0720A3E91E006C6A75 /* Debug */,
+				B4557D0820A3E91E006C6A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4557D1920A3E937006C6A75 /* Build configuration list for PBXNativeTarget "xpc_connection_service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4557D1A20A3E937006C6A75 /* Debug */,
+				B4557D1B20A3E937006C6A75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B47263D120A050200063595F /* Build configuration list for PBXProject "XPCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B47263E820A050210063595F /* Debug */,
+				B47263E920A050210063595F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B47263EA20A050210063595F /* Build configuration list for PBXNativeTarget "XPCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B47263EB20A050210063595F /* Debug */,
+				B47263EC20A050210063595F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B47263FD20A0506B0063595F /* Build configuration list for PBXNativeTarget "ExternalCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B47263FE20A0506B0063595F /* Debug */,
+				B47263FF20A0506B0063595F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B47263CE20A050200063595F /* Project object */;
+}
