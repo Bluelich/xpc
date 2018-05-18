@@ -22,7 +22,7 @@ AppProtocol
 @property (weak) IBOutlet NSButton *connectButton;
 
 @property (weak) IBOutlet NSTextView *textView;
-
+@property (nonatomic,strong) AVCaptureView  *captureView;
 @property (nonatomic,strong) NSXPCConnection *xpcConnection;
 @property (nonatomic,strong) id<ExternalCameraProtocol> xpcConnectionObject;
 

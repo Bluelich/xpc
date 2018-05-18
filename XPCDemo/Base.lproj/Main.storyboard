@@ -712,10 +712,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="equalSpacing" orientation="vertical" alignment="centerX" spacing="20" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NlB-mF-bc7">
-                                <rect key="frame" x="20" y="20" width="80" height="230"/>
+                                <rect key="frame" x="20" y="147" width="80" height="103"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="50R-NV-H9Y">
-                                        <rect key="frame" x="-4" y="202" width="88" height="32"/>
+                                        <rect key="frame" x="-4" y="75" width="88" height="32"/>
                                         <buttonCell key="cell" type="push" title="TestLog" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="H7n-77-AIG">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -725,7 +725,7 @@
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dy9-sP-XNH">
-                                        <rect key="frame" x="-5" y="98" width="90" height="32"/>
+                                        <rect key="frame" x="-5" y="34" width="90" height="32"/>
                                         <buttonCell key="cell" type="push" title="Request" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LdL-Gt-iSZ">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -802,7 +802,6 @@
                             <constraint firstItem="5Q9-WF-1iW" firstAttribute="leading" secondItem="NlB-mF-bc7" secondAttribute="trailing" constant="20" id="1GN-vI-8Jg"/>
                             <constraint firstItem="a1g-oa-mQP" firstAttribute="bottom" secondItem="5Q9-WF-1iW" secondAttribute="bottom" constant="-5" id="7YI-Go-rNI"/>
                             <constraint firstItem="5Q9-WF-1iW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="CXB-pw-EJa"/>
-                            <constraint firstItem="5Q9-WF-1iW" firstAttribute="bottom" secondItem="NlB-mF-bc7" secondAttribute="bottom" id="WmY-v9-if3"/>
                             <constraint firstItem="NlB-mF-bc7" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="af9-3Z-wvY"/>
                             <constraint firstAttribute="trailing" secondItem="5Q9-WF-1iW" secondAttribute="trailing" constant="20" id="epB-aI-PX3"/>
                             <constraint firstItem="5Q9-WF-1iW" firstAttribute="top" secondItem="NlB-mF-bc7" secondAttribute="top" id="iaX-kI-DFd"/>

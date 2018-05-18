@@ -20,6 +20,7 @@ end
 
 def pods_xpc_connection
     pod 'XPCKit'
+#    , :git => 'https://github.com/stevestreza/XPCKit'
 end
 target 'xpc_connection' do
     pods_xpc_connection
